@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // tính kế thừa
+      // animal lớp cha
+      class Animal {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+        eat() {
+          console.log(`${this.name} is eating`);
+        }
+      }
+      //   lớp con
+      class Dog extends Animal {
+        bark() {
+          console.log(`${this.name} is barking`);
+        }
+      }
+      const myDog = new Dog("Buddy");
+      myDog.bark();
+      myDog.eat();
+      //   tính đa hình
+      class Shape {
+        area() {
+          // tính diện tích
+        }
+      }
+      class Square extends Shape {
+        constructor(side) {
+          super();
+          this.side = side;
+        }
+        area() {
+          return this.side ** 2;
+        }
+      }
+      class Circle extends Circle {
+        constructor(radius) {
+          super();
+          this.radius = radius;
+        }
+        area() {
+          return radius ** 2 * Math.PI;
+        }
+      }
+    </script>
+  </body>
+</html>
